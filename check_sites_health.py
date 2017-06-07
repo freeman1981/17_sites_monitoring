@@ -34,8 +34,8 @@ def get_args():
 
 if __name__ == '__main__':
     args = get_args()
-    for line in open(args.input):
-        url = line.strip()
-        if not url:
-            continue
-        print(load_urls4check(url, 30))
+    min_days_for_expiration = 30
+    with open(args.input) as f:
+        urls = [item.strip() for item in f.readlines() if item.strip()]
+    for url in urls:
+        print(load_urls4check(url, min_days_for_expiration))

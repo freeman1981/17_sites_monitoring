@@ -19,7 +19,9 @@ Will show
 {'IS NOT EXPIRED FOR MONTH': True, 'URL': 'https://devman.org', 'IS 200 OK': True}
 ```
 
-You should install requirements python3 -m pip install requirements.txt in vitual enviroment.
+You should install 
+```requirements python3 -m pip install requirements.txt```
+in vitual enviroment.
 
 # Project Goals
 
